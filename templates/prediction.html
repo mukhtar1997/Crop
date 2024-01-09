@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-image: url('https://w0.peakpx.com/wallpaper/284/594/HD-wallpaper-field-in-the-heart-land-yield-crop-clouds-farm-season-heartland-land-rows-harvest-cloud-tractor-sky-skies-farmland-heart-nature-heart-land-crops-field.jpg');
+            background-size: cover;
+            background-position: center ;
+            backdrop-filter: blur(1px);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        h1 {
+            color: #00b894;
+            margin-bottom: 20px;
+        }
+
+        form {
+            width: 70%;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #555;
+            border-radius: 5px;
+            background-color: #2d2d2d;
+            color: #fff;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+    <title>Crop Prediction Form</title>
+</head>
+<body>
+    <h1>Enter Essential Details for Accurate Results</h1>
+    <form  action = '/prediction' method="POST">
+        <label for="nitrogen">Nitrogen:</label>
+        <input type="text" id="nitrogen" name="nitrogen" required>
+
+        <label for="phosphorus">Phosphorus:</label>
+        <input type="text" id="phosphorus" name="phosphorus" required>
+
+        <label for="potassium">Potassium:</label>
+        <input type="text" id="potassium" name="potassium" required>
+
+        <label for="temperature">Temperature:</label>
+        <input type="text" id="temperature" name="temperature" required>
+
+        <label for="humidity">Humidity:</label>
+        <input type="text" id="humidity" name="humidity" required>
+
+        <label for="ph">pH:</label>
+        <input type="text" id="ph" name="ph" required>
+
+        <label for="rainfall">Rainfall:</label>
+        <input type="text" id="rainfall" name="rainfall" required>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
