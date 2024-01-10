@@ -6,33 +6,32 @@
     <title>Crop Prediction Result</title>
     <style>
         body {
-            background-color: #1a1a1a;
-            color: #fff;
-            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-image: url('https://img.freepik.com/free-vector/tropical-leaves-background-zoom_23-2148580778.jpg?size=626&ext=jpg&ga=GA1.1.773202529.1701198147&semt=ais');
+            background-size: cover;
+            background-position: center ;
+            backdrop-filter: blur(1px);
+            color: #fff;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             height: 100vh;
-        }
-
-        #prediction-result {
-            background-color: #2c2c2c;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
+            overflow: hidden;
         }
 
         #result {
-            font-size: 18px;
+            font-size: 70px;
         }
     </style>
 </head>
 <body>
     <div id="prediction-result">
-        <h3>Prediction Result</h3>
+        <div style="background-color: rgb(78, 176, 172); height: 80px; width: auto; border-radius: 5px; border-style: double;padding-bottom: 10px;">
+        <h1>Prediction Result</h1>
+    </div>
         <p id="result">{{ res }}</p>
     </div>
 </body>
